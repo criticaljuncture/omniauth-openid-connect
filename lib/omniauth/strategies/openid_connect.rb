@@ -55,6 +55,7 @@ module OmniAuth
       option :client_auth_method
       option :post_logout_redirect_uri
       option :extra_authorize_params, {}
+      option :jwt
       option :uid_field, 'sub'
 
       def uid
@@ -169,6 +170,7 @@ module OmniAuth
           nonce: (new_nonce if options.send_nonce),
           hd: options.hd,
           acr_values: options.acr_values,
+          jwt: options.jwt,
         }
 
         opts.merge!(options.extra_authorize_params) unless options.extra_authorize_params.empty?
