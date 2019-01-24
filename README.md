@@ -1,3 +1,13 @@
+# CJ Fork
+
+- original fork was from jjbohn/omniauth-openid-connect
+  - no longer maintained
+- rebased on m0n9oose/omniauth_openid_connect
+  - new maintainer
+
+- we added a :jwt key for passing messages to the single sign on system via jwt (995f20f)
+
+
 # OmniAuth::OpenIDConnect
 
 Originally was [omniauth-openid-connect](https://github.com/jjbohn/omniauth-openid-connect)
